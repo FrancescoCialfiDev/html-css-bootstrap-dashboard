@@ -77,23 +77,23 @@
                 <form class="row g-4">
                     <div class="col-6">
                       <label for="nomeautore" class="form-label">Nome Autore</label>
-                      <input type="text" class="form-control" id="nomeautore" placeholder="Inserisci il nome dell'autore" required>
+                      <input name="nomeautore" type="text" class="form-control" id="nomeautore" placeholder="Inserisci il nome dell'autore" required>
                     </div>
 
                     <div class="col-6">
                       <label for="cognomeautore" class="form-label">Cognome Autore</label>
-                      <input type="text" class="form-control" id="cognomeautore" placeholder="Inserisci il cognome dell'autore" required>
+                      <input type="text" name="cognomeautore" class="form-control" id="cognomeautore" placeholder="Inserisci il cognome dell'autore" required>
                     </div>
 
                     <div class="col-12">
                       <label for="titolo" class="form-label">Titolo</label>
-                      <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
-                      <div class="form-text"  id="specifiche">Titolo versione Italiana</div>
+                      <input type="text" name="titolo" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
+                      <div class="form-text" id="specifiche">Titolo versione Italiana</div>
                     </div>
                     
                     <div class="col-md-4">
-                        <label for="genere" class="form-label">Genere</label>
-                        <select id="genere" class="form-select" aria-label="scelta genere">
+                        <label for="categoria" class="form-label">Genere</label>
+                        <select name="categoria" id="genere" class="form-select" aria-label="categoria">
                             <option selected>Scegli il genere</option>
                             <option value="romanzo">Romanzo</option>
                             <option value="horror">Horror</option>
@@ -105,24 +105,24 @@
 
                     <div class="col-md-4">
                       <label for="anno" class="form-label">Anno di Pubblicazione</label>
-                      <input class="form-control" id="anno" type="number" min="1900" max="3000" placeholder="Inserisci l'anno">
+                      <input class="form-control" name="anno" id="anno" type="number" min="1900" max="3000" placeholder="Inserisci l'anno">
                     </div>
 
                     <div class="col-md-4">
                       <label for="isbn" class="form-label" >ISBN#</label>
-                      <input type="text" class="form-control " id="isbn" maxlength="13" placeholder="Inserisci il codice ISBN#">
+                      <input type="text" class="form-control" name="isbn" id="isbn" maxlength="13" placeholder="Inserisci il codice ISBN#">
                     </div>
                     
                     <div class="spacing"></div>
 
-                    <div class="form-floating">
-                        <p><label for="area-di-testo" >Note</label></p>
-                        <textarea class="form-control"  id="area-di-testo" style="height: 100px">Inserisci eventuai note sul libro</textarea>
+                      <div class="form-floating">
+                          <p><label for="area-di-testo" >Note</label></p>
+                          <textarea class="form-control"  name="area-di-testo" id="area-di-testo" style="height: 100px">Inserisci eventuali note sul libro</textarea>
                       </div>
 
                     <div class="col-12">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="check">
+                        <input name="check" class="form-check-input" type="checkbox" id="check">
                         <label class="form-check-label" for="check">
                           Disponibile anche in digitale
                         </label>
@@ -131,7 +131,7 @@
 
                     <div class="col-12">
                       <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
-                      <button type="submit" class="btn btn-danger">Rimuovi</button>
+                      <button type="reset" class="btn btn-danger">Rimuovi</button>
                     </div>
 
                     
